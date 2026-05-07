@@ -1,96 +1,161 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Site Org</title>
-    <link rel="stylesheet" href="css/index.css">
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projeto Construindo o Amanhã</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="reset.css">
+  <link rel="stylesheet" href="color.css">
+  <link rel="stylesheet" href="index.css">
 </head>
-
 <body>
-    <!--inicio nav-->
-    <nav class="w3-bar w3-light-grey w3-border w3-card-4 w3-large">
-        <a href="#home" class="w3-bar-item w3-border w3-button"><i class="fa fa-home"></i></a>
-        <a href="#section" class="w3-bar-item w3-border w3-button w3-right">Sobre nós</a>
-        <a href="#colaborador" class="w3-bar-item w3-border w3-button w3-right">Seja um colaborador</a>
-        <a href="#" class="w3-bar-item w3-border w3-button w3-right">Contatos</a>
-    </nav>
-    <!--final nav-->
 
-    <!--inicio home-->
-    <div id="home" class="w3-content">
-        <img class="w3-margin-top w3-padding-64" src="css/img/LOGO ORG.png" alt="logo" style="width:100%">
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <a href="#home" class="nav-logo">Construindo o Amanhã</a>
+    <div class="nav-links">
+      <a href="#home"      class="nav-link">Início</a>
+      <a href="#sobre"     class="nav-link">Sobre nós</a>
+      <a href="#colaborar" class="nav-link">Colabore</a>
+      <a href="#oficinas"  class="nav-link">Oficinas</a>
+      <a href="#contato"   class="nav-link">Contato</a>
     </div>
-    <!--final home-->
+  </nav>
 
-    <!--inicio section-->
-    <div id="section" class="w3-padding-top-64 w3-border-bottom">
-        <div class="w3-row">
+  <!-- HERO -->
+  <section id="home" class="hero">
+    <div class="hero-badge">Desde 2017 · Lauro de Freitas, BA</div>
+    <h1>Projeto<br><span>Construindo o Amanhã</span></h1>
+    <p class="hero-sub">Formação integral de crianças e adolescentes em todos os aspectos: social, religioso, criativo e cultural.</p>
+    <div class="hero-stats">
+      <div class="stat">
+        <div class="stat-num">+10</div>
+        <div class="stat-label">Anos de impacto</div>
+      </div>
+      <div class="stat">
+        <div class="stat-num">1</div>
+        <div class="stat-label">Oficinas ativas</div>
+      </div>
+      <div class="stat">
+        <div class="stat-num">1</div>
+        <div class="stat-label">Bairros atendidos</div>
+      </div>
+    </div>
+  </section>
 
-            <div class="w3-half w3-padding-large w3-hide-small">
-                <img src="css/img/FOTO PESSOAS ORG OFC.png" class="w3-round w3-image w3-opacity-min" alt="Table" style="width:100%">
-            </div>
+  <!-- SOBRE NÓS -->
+  <section id="sobre" class="section">
+    <div class="two-col">
 
-            <div id="Sobrenos"class="w3-half w3-padding-large">
-                <h1 class="w3-center">Sobre nós</h1><br>
-                <h5 class="w3-center">Desde 2017</h5>
-                <p class="w3-large">
-                O Projeto Construindo o Amanhã é uma instituição filantrópica, vinculada a Associação das Obras Sociais das Irmãs Servas do Espírito Santo localizada em Lauro de Freitas no bairro Vida Nova, Quingoma e que tem por finalidade formação integral do ser humano, em todos os aspectos: social, religioso, criativo e cultural, visando a melhor participação na família, trabalho, comunidade e sociedade.</p>
-                <p class="w3-large w3-text-grey w3-hide-medium">Os Nossos Objetivos São Oferecer espaço de convívio e de participação para crianças e adolescentes de ambos os sexos, em horários alternados da escola. E Oferecer proteção social, com serviço de ação continuada a crianças e adolescentes em situação de vulnerabilidade social, assegurando espaços de referência e de participação, de relações de afetividade e de respeito.</p>
-            </div>
+      <div class="about-img"> <img src="css/img/LOGO ORG.png" alt="">
+      
+      </div>
+
+      <div>
+        <div class="section-tag tag-teal">Sobre nós</div>
+        <h2>Quem somos</h2>
+        <p>O Projeto Construindo o Amanhã é uma instituição filantrópica, vinculada à Associação das Obras Sociais das Irmãs Servas do Espírito Santo, localizada em Lauro de Freitas nos bairros Vida Nova e Quingoma.</p>
+        <p>Temos por finalidade a formação integral do ser humano em todos os aspectos: social, religioso, criativo e cultural, visando a melhor participação na família, trabalho, comunidade e sociedade.</p>
+        <p>Oferecemos espaço de convívio e proteção social a crianças e adolescentes em situação de vulnerabilidade social, assegurando espaços de referência, afetividade e respeito.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- COLABORAR -->
+  <section id="colaborar" class="section-full colaborar-section">
+    <div class="section-full-inner">
+      <div class="section-tag tag-green">Seja um colaborador</div>
+      <h2>Faça parte dessa missão! 💚</h2>
+      <p>Todas as colaborações são direcionadas exclusivamente à alimentação das crianças e adolescentes cadastrados em nosso sistema. Transparência e responsabilidade são nossos valores fundamentais.</p>
+      <p>Sua doação é mais que um gesto de solidariedade — é um ato de amor e esperança que contribui para a construção de um futuro mais justo e digno para todos.</p>
+
+      <p class="steps-title">Como colaborar via Nota Premiada Bahia?</p>
+      <div class="steps">
+        <div class="step">
+          <div class="step-num">1</div>
+          <div class="step-text">Acesse <strong>www.notapremiadadabahia.ba.gov.br</strong> e realize seu cadastro com seus dados pessoais</div>
         </div>
-    </div>
-    <!--final section-->
-    
-    <!--inicio section2-->
-    <div id="colaborador" class="w3-container w3-padding-32 w3-border-bottom">
-        
-        <h1 class="w3-center">Seja um colaborador!</h1>
-        <p >Todas as colaborações que recebemos são direcionadas exclusivamente a alimentação das crianças e adolescentes que estejam devidamente cadastradas no nosso sistema. A transparencia e a responsabilidade são os valores para a fundamentais para a nossas ações.
-        <br>Contamos com a sua colaboração para continuarmos com essa nobre missão de fazer a diferença a quem servimos. Sua doação é mais que um gesto de solidariedade, é um ato de amor e esperança que contribui para a construção do futuro mais justo e digno para todos</p>
-        <h1 class="w3-center">Como colaborar?</h1>
-        <p>1. Acesse <a href="www.notapremiadadabahia.ba.gov.br">www.notapremiadadabahia.ba.gov.br</a></p>
-        <p>2. Realize seu cadastro com seus dados pessoais</p>
-        <p>3. Escolha Social</p>
-        <p>4. Indique a ISES -ASS. OBRA DAS IRMÃS SERVAS DO ESPIRITO SANTO</p>
-        <p class="w3-center">Pronto! Para iniciar sua contrinuição, basta solicitar seu CPF na NOTA sempre que realizxar uma compra, assim voçê estará contribuindo com duas importantes instituições filantrópicas de uma só vez</p>
-
-    </div>
-    <!--final section2-->
-
-    <!--inicio fotos-->
-    <div id="members" class="w3-container w3-padding-32">
-        <div class="w3-row w3-center">
-            <h1>Oficinas</h1>
-
-            <div class="w3-third">
-                <img class="w3-border" src="css/img/oficina arte.jpg" alt="Name1" style="width:60%">
-            </div>
-
-            <div class="w3-third">
-                <img class="w3-border" src="css/img/oficina capoeira.jpg" alt="Name2" style="width:60%">
-            </div>
-
-            <div class="w3-third">
-                <img class="w3-border" src="css/img/oficina literatura.jpg" alt="Name3" style="width:60%">
-            </div>
-
+        <div class="step">
+          <div class="step-num">2</div>
+          <div class="step-text">Escolha a categoria <strong>Social</strong></div>
         </div>
+        <div class="step">
+          <div class="step-num">3</div>
+          <div class="step-text">Indique a <strong>ISES — ASS. OBRA DAS IRMÃS SERVAS DO ESPIRITO SANTO</strong></div>
+        </div>
+        <div class="step">
+          <div class="step-num">4</div>
+          <div class="step-text">Solicite seu <strong>CPF na nota</strong> sempre que realizar uma compra. Pronto! Você estará contribuindo com duas instituições filantrópicas de uma só vez 🎉</div>
+        </div>
+      </div>
+      <a href="https://www.notapremiadadabahia.ba.gov.br" target="_blank" rel="noopener" class="cta-btn">
+        Acessar Nota Premiada Bahia →
+      </a>
     </div>
-    <!--final fotos-->
+  </section>
 
-    <!--inicio footer-->
-    <div class="w3-container w3-blue-grey w3-grayscale-min w3-xlarge w3-padding-top-32">
+  <!-- OFICINAS -->
+  <section id="oficinas" class="section">
+    <div class="section-tag tag-amber">Oficinas</div>
+    <h2>Nossas atividades</h2>
+    <p>Oferecemos oficinas pensadas para estimular o aprendizado, a criatividade e o bem-estar, contribuindo para o desenvolvimento físico, intelectual, social e emocional de cada criança e adolescente.</p>
 
-    <h1 class="w3-center w3-jumbo">Contatos</h1>
+    <div class="oficinas-grid">
 
-    <p>Localização:  Rua Maria Rosinete Velozo Augusto, Estr. Quengoma, BA, 42724-040</p>
-    <p>Fale conosco: (71)99199-5225</p>
+      <div class="oficina-card">
+
+          <img src="css/img/oficina arte.jpg" alt="Oficina de Artes">
+        <div class="oficina-label">Oficina de Artes</div>
+      </div>
+
+      <div class="oficina-card">
+          <img src="css/img/oficina capoeira.jpg" alt="Oficina de Capoeira">
+        <div class="oficina-label">Oficina de Capoeira</div>
+      </div>
+
+      <div class="oficina-card">
+          <img src="css/img/oficina literatura.jpg" alt="Oficina de Literatura">
+        <div class="oficina-label">Oficina de Literatura</div>
+      </div>
 
     </div>
-    <!--inicio footer-->
+
+    <p style="font-style: italic;">Nosso compromisso é criar um ambiente acolhedor e motivador, onde cada criança possa descobrir suas habilidades, superar desafios e crescer de forma integral.</p>
+  </section>
+
+  <!-- FOOTER / CONTATO -->
+  <footer id="contato">
+    <h2>Fale conosco 💬</h2>
+    <div class="footer-grid">
+      <div class="footer-item">
+        <div class="footer-icon">
+          <svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+        </div>
+        <div class="footer-text">
+          <strong>Localização</strong>
+          Rua Maria Rosinete Velozo Augusto, Estr. Quengoma, BA — 42724-040
+        </div>
+      </div>
+      <div class="footer-item">
+        <div class="footer-icon">
+          <svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.59 1h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 8.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+        </div>
+        <div class="footer-text">
+          <strong>Telefone</strong>
+          (71) 99199-5225
+        </div>
+      </div>
+    </div>
+
+    <a href="https://www.instagram.com/projetoconstruindoamanha/" target="_blank" rel="noopener" class="insta-btn">
+      <svg viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+      Siga no Instagram
+    </a>
+
+    <p class="footer-copy">© 2025 · Projeto Construindo o Amanhã · Lauro de Freitas, BA</p>
+  </footer>
+
 </body>
 </html>
